@@ -1,0 +1,50 @@
+
+h1{
+    font-size: 33px;
+    vertical-align: bottom;
+    line-height: 45px;
+}
+#zzzz{
+    width: 100%;
+}
+.menu a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+    color:#778899
+}
+
+.menu a:hover{
+    color:#EE5C23
+}
+#menu-main-menu{
+    float: right;
+}
+/*body{*/
+/*background-image: url("yusufla-art.jpg");*/
+/*}*/
+
+.col img.rsImg{
+    padding-top: 50px;
+    width: 800px!important;
+    margin: 0 auto;
+}
+
+.col img.rsImg2{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: auto;
+}
+
+.col-100{
+    margin-top: 125px!important;
+    text-align: center;
+}
+.logo-main{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+}
+
+#hh{
+    height: 60px;
+}
+

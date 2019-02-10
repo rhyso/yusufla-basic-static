@@ -15,26 +15,27 @@ Yusufla Music
 <!-- Styles -->
 <link rel="stylesheet" href="http://sociodesign.co.uk/base/wp-content/themes/socio/css/reset.css" />
 <link rel="stylesheet" href="http://sociodesign.co.uk/base/wp-content/themes/socio/css/style.css" />
-
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+<link rel = "stylesheet" type = "text/css" href = "custom-style.css" />
 <!-- IE includes -->
 <!--[if lt IE 9]><link rel="stylesheet" href="http://sociodesign.co.uk/base/wp-content/themes/socio/css/ie.css"><![endif]-->
 <!--[if lt IE 8]><link rel="stylesheet" href="http://sociodesign.co.uk/base/wp-content/themes/socio/css/ie7.css"><![endif]-->
 <!--[if lt IE 7]><link rel="stylesheet" href="http://sociodesign.co.uk/base/wp-content/themes/socio/css/ie6.css"><![endif]-->
 
-<STYLE>
-	h1{
-		font-size: 33px;
-		vertical-align: bottom;
-		line-height: 45px;
-	}
-	#zzzz{
-		width: 100%;
-	}
-	#menu-main-menu{
-		float: right;
-	}
-</STYLE>
-
+<script>
+    var colors = ["#1F3877", "#018AB1", "#50AFC7", "#2E4880", "#EE5C23"]
+    var currentColor = 0
+    var lis = document.getElementsByClassName("logo-main")
+	console.log(lis)
+    function changeColor() {
+        --currentColor
+        if (currentColor < 0) currentColor = colors.length -1
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].style.color = colors[(currentColor +i) % colors.length]
+        }
+    }
+    setInterval(changeColor, 2000)
+</script>
 </head>
 
 <body class="desktop" >
@@ -56,7 +57,7 @@ Yusufla Music
 		<div id="hh">
 			<div id="logo-holder" class="col col-50">
 				<div class="col-inner-hori">
-				  					<h1>YUSUFLA</h1>
+				  					<h1 class="logo-main">YUSUFLA</h1>
 									</div>
 			</div>
 			<ul id="menu-main-menu" class="menu">
@@ -77,13 +78,20 @@ Yusufla Music
     <div id="partialblock">&nbsp;</div>
 
 	  <div class="col col-100 thumb-holder">
+		  <h2><br/><b><i>Ep Tour Dates </i></b></h2>
+		  <ul><li>11 Feb - Yusufla EP Launch, Pizza Express Live, London</li>
+			  <li>14 Feb – The Canteen, Bristol</li>
+			  <li>20 Feb – The Domino Club, Leeds</li>
+			  <li>21 Feb – Matt and Phreds, Manchester</li>
+			  <li>22 Feb – The Jazz Bar, Edinburgh</li></ul>
 		  <div class="col-inner-hori thumbnail" style="margin-top: 0px !important;">
 
 
 
 
 
-			  <img class="rsImg" src="yus.jpg"  width="1600" height="900" />
+			  <img class="rsImg" src="yusufla-band.jpg" />
+			  <img class="rsImg2" src="yusufla-art.jpg" />
 
 
 
