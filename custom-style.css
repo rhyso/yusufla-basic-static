@@ -32,7 +32,7 @@ h1{
 .col img.rsImg2{
     margin: 0 auto;
     margin-top: 50px;
-    width: auto;
+    width: 800px!important;
 }
 
 .col-100{
